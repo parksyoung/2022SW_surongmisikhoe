@@ -37,7 +37,7 @@ public class CustomAdapter_s extends RecyclerView.Adapter<CustomAdapter_s.Custom
 
         holder.tv_name.setText(arrayList.get(position).getName());
         holder.tv_dong.setText(arrayList.get(position).getDong());
-        holder.tv_star.setText(arrayList.get(position).getStar());
+        holder.tv_star.setText(String.valueOf(arrayList.get(position).getStar()));
 
 
 

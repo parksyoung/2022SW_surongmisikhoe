@@ -3,10 +3,9 @@ package com.example.sw_02;
 public class k_rst {
     private String name;
     private String dong;
-    private String star;
+    private int star;
 
     public k_rst(){}
-
 
     public String getName() {
         return name;
@@ -24,11 +23,11 @@ public class k_rst {
         this.dong = dong;
     }
 
-    public String getStar() {
+    public int getStar() {
         return star;
     }
 
-    public void setStar(String star) {
+    public void setStar(int star) {
         this.star = star;
     }
 }

@@ -3,7 +3,7 @@ package com.example.sw_02;
 public class s_rst {
     private String dong;
     private String name;
-    private String star;
+    private int star;
 
     public s_rst() {
     }
@@ -24,20 +24,13 @@ public class s_rst {
         this.name = name;
     }
 
-    public String getStar() {
+    public int getStar() {
         return star;
     }
 
-    public void setStar(String star) {
+    public void setStar(int star) {
         this.star = star;
     }
-
-    public s_rst(String dong, String name, String star) {
-        this.dong = dong;
-        this.name = name;
-        this.star = star;
-    }
-
 }
 
 

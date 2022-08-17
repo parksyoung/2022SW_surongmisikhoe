@@ -2,11 +2,10 @@ package com.example.sw_02;
 
 public class c_rst {
     private String name;
-    private String star;
+    private int star;
     private String dong;
 
     public c_rst(){}
-
 
     public String getName() {
         return name;
@@ -16,17 +15,19 @@ public class c_rst {
         this.name = name;
     }
 
-    public String getDong() { return dong;}
-
-    public void setDong(String dong) {
-        this.dong = dong;
-    }
-
-    public String getStar() {
+    public int getStar() {
         return star;
     }
 
-    public void setStar(String star) {
+    public void setStar(int star) {
         this.star = star;
+    }
+
+    public String getDong() {
+        return dong;
+    }
+
+    public void setDong(String dong) {
+        this.dong = dong;
     }
 }

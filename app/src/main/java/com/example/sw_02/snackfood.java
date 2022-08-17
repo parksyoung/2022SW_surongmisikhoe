@@ -21,10 +21,9 @@ public class snackfood extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private Arraylist<snackfood> arraylist;
+    private ArrayList<s_rst> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
-    private ArrayList<s_rst> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +34,7 @@ public class snackfood extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        arraylist = new Arraylist<>();
+        arrayList = new ArrayList<>();
 
         database = FirebaseDatabase.getInstance();
 
@@ -43,10 +42,10 @@ public class snackfood extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                arraylist.clear();
+                arrayList.clear();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                       s_rst s_rst = snapshot.getValue(s_rst.class);
-                      arraylist.add(s_rst);
+                      arrayList.add(s_rst);
                 }
                 adapter.notifyDataSetChanged();
             }
@@ -61,18 +60,4 @@ public class snackfood extends AppCompatActivity {
         adapter = new CustomAdapter_s(arrayList, this);
         recyclerView.setAdapter(adapter);
         }
-
-
-
-
-    private class Arraylist<T> {
-        public void clear() {
-        }
-
-        public void add(T s_rst) {
-        }
-
-        public void add(s_rst s_rst) {
-        }
-    }
 }
