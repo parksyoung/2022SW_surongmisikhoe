@@ -48,8 +48,8 @@ public class starActivity extends AppCompatActivity {
                 //파이어베이스 데이터베이스 데이터를 받아오는 곳
                 arrayList.clear(); //기존 배열 초기화
                 for (DataSnapshot snapshot1 : snapshot.getChildren()) {
-                    StarData StarData = snapshot1.getValue(StarData.class);
-                    arrayList.add(StarData); // 담은 데이터를 배열리스트에 넣고 리사이클러뷰로 보낼 준비
+                    StarData starData = snapshot1.getValue(StarData.class);
+                    arrayList.add(starData); // 담은 데이터를 배열리스트에 넣고 리사이클러뷰로 보낼 준비
                 }
                 adapter.notifyDataSetChanged(); //리스트 저장 및 새로고침
             }
