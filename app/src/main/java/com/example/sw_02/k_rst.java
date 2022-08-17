@@ -3,7 +3,7 @@ package com.example.sw_02;
 public class k_rst {
     private String name;
     private String dong;
-    private String star;
+
 
     public k_rst(){}
 
@@ -24,11 +24,5 @@ public class k_rst {
         this.dong = dong;
     }
 
-    public String getStar() {
-        return star;
-    }
 
-    public void setStar(String star) {
-        this.star = star;
-    }
 }
