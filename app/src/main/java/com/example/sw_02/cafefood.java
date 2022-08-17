@@ -52,7 +52,7 @@ public class cafefood extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.e("koreanfood", String.valueOf(databaseError.toException()));
+                Log.e("cafefood", String.valueOf(databaseError.toException()));
 
             }
         });
