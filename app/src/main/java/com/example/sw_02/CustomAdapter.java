@@ -41,7 +41,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
         holder.tv_name.setText(arrayList.get(position).getName());
         holder.tv_dong.setText(arrayList.get(position).getDong());
-
+        holder.tv_star.setText(arrayList.get(position).getStar());
 
 
 
@@ -55,14 +55,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name;
         TextView tv_dong;
-
+        TextView tv_star;
 
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
             this.tv_dong = itemView.findViewById(R.id.tv_dong);
-
+            this.tv_star = itemView.findViewById(R.id.tv_star);
         }
     }
 }

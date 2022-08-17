@@ -23,7 +23,7 @@ public class reviewActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private  RecyclerView.LayoutManager layoutManager;
-    private ArrayList<ReviewData> arrayList;
+    private ArrayList<shop> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
@@ -47,8 +47,8 @@ public class reviewActivity extends AppCompatActivity {
                 //파이어베이스 데이터베이스 데이터를 받아오는 곳
                 arrayList.clear(); //기존 배열 초기화
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    ReviewData reviewData = snapshot.getValue(ReviewData.class);
-                    arrayList.add(reviewData); // 담은 데이터를 배열리스트에 넣고 리사이클러뷰로 보낼 준비
+                    shop shop = snapshot.getValue(shop.class);
+                    arrayList.add(shop); // 담은 데이터를 배열리스트에 넣고 리사이클러뷰로 보낼 준비
                 }
                 adapter.notifyDataSetChanged(); //리스트 저장 및 새로고침
             }

@@ -13,11 +13,11 @@ import java.util.ArrayList;
 
 public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.CustomViewHolder>{
 
-    private ArrayList<ReviewData> arrayList;
+    private ArrayList<shop> arrayList;
     private Context context;
 
 
-    public ReviewAdapter(ArrayList<ReviewData> arrayList, Context context) {
+    public ReviewAdapter(ArrayList<shop> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -33,9 +33,9 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.CustomView
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        holder.tv_name.setText(arrayList.get(position).getTv_name());
-        holder.tv_cate.setText(arrayList.get(position).getTv_cate_1());
-        holder.tv_review.setText(arrayList.get(position).getTv_rate_num());
+        holder.tv_name.setText(arrayList.get(position).getName());
+        holder.tv_cate.setText(arrayList.get(position).getCate_1());
+        holder.tv_review.setText(String.valueOf(arrayList.get(position).getRate_num()));
 
     }
 
