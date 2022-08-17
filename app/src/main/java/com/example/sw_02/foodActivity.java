@@ -71,7 +71,7 @@ public class foodActivity extends AppCompatActivity {
         cafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(foodActivity.this, cafeActivity.class);
+                Intent intent = new Intent(foodActivity.this, cafefood.class);
                 startActivity(intent);
 
             }

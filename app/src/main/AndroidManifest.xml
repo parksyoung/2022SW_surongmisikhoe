@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SW_02">
         <activity
-            android:name=".cafeActivity"
-            android:exported="false" />
-        <activity
             android:name=".starActivity"
             android:exported="false" />
         <activity
@@ -20,6 +17,24 @@
             android:exported="false" />
         <activity
             android:name=".japenfood"
+            android:exported="false" />
+        <activity
+            android:name=".foodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".snackfood"
+            android:exported="false" />
+        <activity
+            android:name=".koreanfood"
+            android:exported="false" />
+        <activity
+            android:name=".westernfood"
+            android:exported="false" />
+        <activity
+            android:name=".cafefood"
+            android:exported="false" />
+        <activity
+            android:name=".chinafood"
             android:exported="false" />
         <activity
             android:name=".loginActivity2"
@@ -34,5 +49,7 @@
             android:name=".MainActivity"
             android:exported="true" />
     </application>
+
+
 
 </manifest>
