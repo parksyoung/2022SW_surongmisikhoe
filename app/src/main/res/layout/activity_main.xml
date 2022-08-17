@@ -91,9 +91,10 @@ tools:context=".MainActivity">
                 android:layout_gravity="center"
                 android:layout_marginStart="97dp"
                 android:layout_marginTop="10dp"
-                android:text="성신여대 수정캠퍼스 주변 맛집을 다양한 카테고리에 따라 추천해드려요"
+                android:text="\n성신여대 수정캠퍼스\n주변 맛집을\n다양한 카테고리에 따라\n추천해드려요"
+                android:textAlignment="center"
                 android:textColor="#0E0E0E"
-                android:textSize="25dp" />
+                android:textSize="23dp" />
 
         </RelativeLayout>
 
