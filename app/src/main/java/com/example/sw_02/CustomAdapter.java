@@ -18,7 +18,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     private ArrayList<k_rst> arrayList;
     private Context context;
 
-    public CustomAdapter(ArrayList<c_rst> arrayList, Context context) {
+    public CustomAdapter(ArrayList<k_rst> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
