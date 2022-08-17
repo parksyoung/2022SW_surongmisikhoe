@@ -11,27 +11,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Snackadapter extends RecyclerView.Adapter<Snackadapter.adapter01ViewHolder> {
+public class CustomAdapter_s extends RecyclerView.Adapter<CustomAdapter_s.CustomViewHolder> {
 
     private ArrayList<Snacksnack> arrayList;
     private Context context;
 
-    public Snackadapter(ArrayList<Snacksnack> arrayList, Context context) {
+    public CustomAdapter_s(ArrayList<Snacksnack> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public adapter01ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_snack, parent, false);
-        adapter01ViewHolder holder = new adapter01ViewHolder(view);
+        CustomViewHolder holder = new CustomViewHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull adapter01ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
 
 
 
@@ -49,14 +49,14 @@ public class Snackadapter extends RecyclerView.Adapter<Snackadapter.adapter01Vie
         return (arrayList != null ? arrayList.size() : 0);
     }
 
-    public class adapter01ViewHolder extends RecyclerView.ViewHolder {
+    public class CustomViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name;
         TextView tv_dong;
         TextView tv_star;
 
 
 
-        public adapter01ViewHolder(@NonNull View itemView) {
+        public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
             this.tv_dong = itemView.findViewById(R.id.tv_dong);
@@ -65,4 +65,6 @@ public class Snackadapter extends RecyclerView.Adapter<Snackadapter.adapter01Vie
 
         }
     }
+
+
 }

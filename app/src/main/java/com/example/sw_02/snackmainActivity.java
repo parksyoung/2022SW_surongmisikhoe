@@ -39,7 +39,7 @@ public class snackmainActivity extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
 
-        databaseReference = database.getReference("snacksnack");
+        databaseReference = database.getReference("Snacksnack");
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

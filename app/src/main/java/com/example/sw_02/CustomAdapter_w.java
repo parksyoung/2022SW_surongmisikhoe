@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
@@ -37,7 +37,7 @@ public class CustomAdapter_w extends RecyclerView.Adapter<CustomAdapter_w.Custom
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        Glide.with(holder.itemView);
+
         holder.tv_name.setText(arrayList.get(position).getName());
         holder.tv_dong.setText(arrayList.get(position).getDong());
         holder.tv_star.setText(arrayList.get(position).getStar());
