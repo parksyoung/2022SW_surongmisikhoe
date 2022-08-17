@@ -21,14 +21,14 @@ public class cafefood extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<f_rst> arrayList;
+    private ArrayList<k_rst> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cafe);
+        setContentView(R.layout.activity_koreanfood);
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -38,26 +38,26 @@ public class cafefood extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
 
-        databaseReference = database.getReference("f_rst");
+        databaseReference = database.getReference("k_rst");
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 arrayList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    f_rst f_rst = snapshot.getValue(f_rst.class);
-                    arrayList.add(f_rst);
+                    k_rst k_rst = snapshot.getValue(k_rst.class);
+                    arrayList.add(k_rst);
                 }
                 adapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.e("cafefood", String.valueOf(databaseError.toException()));
+                Log.e("koreanfood", String.valueOf(databaseError.toException()));
 
             }
         });
 
-        adapter = new CustomAdapter_f(arrayList, this);
+        adapter = new CustomAdapter(arrayList, this);
         recyclerView.setAdapter(adapter);
     }
 }

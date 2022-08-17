@@ -57,7 +57,8 @@ public class chinafood extends AppCompatActivity {
             }
         });
 
-        adapter = new CustomAdapter(arrayList, this);
+        adapter = new CustomAdapter_c(arrayList, this) {
+        };
         recyclerView.setAdapter(adapter);
     }
 }
