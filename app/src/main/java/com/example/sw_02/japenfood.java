@@ -57,7 +57,8 @@ public class japenfood extends AppCompatActivity {
             }
         });
 
-        adapter = new CustomAdapter(arrayList, this);
+        adapter = new CustomAdapter_j(arrayList, this) {
+        };
         recyclerView.setAdapter(adapter);
     }
 }

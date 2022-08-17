@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class snackActivity extends AppCompatActivity {
+public class snackfood extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -54,7 +54,7 @@ public class snackActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                Log.e("snackActivity", String.valueOf(databaseError.toException()));
+                Log.e("snackfood", String.valueOf(databaseError.toException()));
             }
         });
 
