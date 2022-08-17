@@ -3,7 +3,7 @@ package com.example.sw_02;
 public class Snacksnack {
     private String dong;
     private String name;
-    private int star;
+    private String star;
 
     public Snacksnack() {
     }
@@ -24,15 +24,15 @@ public class Snacksnack {
         this.name = name;
     }
 
-    public int getStar() {
+    public String getStar() {
         return star;
     }
 
-    public void setStar(int star) {
+    public void setStar(String star) {
         this.star = star;
     }
 
-    public Snacksnack(String dong, String name, int star) {
+    public Snacksnack(String dong, String name, String star) {
         this.dong = dong;
         this.name = name;
         this.star = star;

@@ -53,7 +53,7 @@ public class food extends AppCompatActivity {
         japanfood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, japenfoodActivity.class);
+                Intent intent = new Intent(food.this, japenfood.class);
                 startActivity(intent);
 
             }
