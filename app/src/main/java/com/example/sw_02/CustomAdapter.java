@@ -24,6 +24,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
 
+    public CustomAdapter(ArrayList<c_rst> arrayList, chinafood context) {
+    }
+
 
     @NonNull
     @Override
