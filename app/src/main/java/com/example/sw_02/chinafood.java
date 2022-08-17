@@ -21,7 +21,7 @@ public class chinafood extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<k_rst> arrayList;
+    private ArrayList<c_rst> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
@@ -34,7 +34,7 @@ public class chinafood extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        arrayList = new ArrayList<>();
+        arrayList = new ArrayList<c_rst>();
 
         database = FirebaseDatabase.getInstance();
 

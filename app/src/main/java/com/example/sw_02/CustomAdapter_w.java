@@ -29,15 +29,11 @@ public class CustomAdapter_w extends RecyclerView.Adapter<CustomAdapter_w.Custom
     @Override
     public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ViewGroup list_westernfood;
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout,list_westernfood, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_westernfood, parent, false);
         CustomViewHolder holder = new CustomViewHolder(view);
         return holder;
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-
-    }
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
