@@ -3,50 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="400dp"
     android:layout_height="500dp"
+    android:layout_centerHorizontal="true"
     android:background="@drawable/sungshindragon"
     android:orientation="vertical"
     tools:context=".foodActivity">
 
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="283dp"
-        android:layout_height="114dp" />
-
-    <Button
-        android:id="@+id/koreanfood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/한식" />
-
     <Button
         android:id="@+id/japanfood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/일식" />
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="@string/일식"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="84dp" />
 
-    <Button
-        android:id="@+id/westernfood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/양식" />
 
-    <Button
-        android:id="@+id/chinafood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/중식" />
-
-    <Button
-        android:id="@+id/snack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/분식" />
 
     <Button
         android:id="@+id/cafe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/카페" />
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="@string/카페"
+        android:textSize="20dp"
+        android:layout_gravity="right"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <Button
+        android:id="@+id/chinafood"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"
+        android:text="@string/중식"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/koreanfood"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:text="@string/한식"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <Button
+        android:id="@+id/snack"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"
+        android:text="@string/분식"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/westernfood"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:text="@string/양식"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="203dp" />
 
 </LinearLayout>

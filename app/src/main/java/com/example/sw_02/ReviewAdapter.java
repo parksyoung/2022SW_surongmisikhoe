@@ -34,8 +34,8 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.CustomView
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         holder.tv_name.setText(arrayList.get(position).getName());
-        holder.tv_cate.setText(arrayList.get(position).getCate_1());
-        holder.tv_review.setText(String.valueOf(arrayList.get(position).getRate_num()));
+        holder.tv_cate_1.setText(arrayList.get(position).getCate_1());
+        holder.tv_rate_num.setText(String.valueOf(arrayList.get(position).getRate_num()));
 
     }
 
@@ -46,14 +46,14 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.CustomView
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name;
-        TextView tv_cate;
-        TextView tv_review;
+        TextView tv_cate_1;
+        TextView tv_rate_num;
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
-            this.tv_cate = itemView.findViewById(R.id.tv_cate_1);
-            this.tv_review = itemView.findViewById(R.id.tv_rate_num);
+            this.tv_cate_1 = itemView.findViewById(R.id.tv_cate_1);
+            this.tv_rate_num = itemView.findViewById(R.id.tv_rate_num);
         }
     }
 }
