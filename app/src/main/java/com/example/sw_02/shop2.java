@@ -1,12 +1,11 @@
 package com.example.sw_02;
 
 public class shop2 {
-
     private String name;
-    private String cate_1;
-    private Double star;
+    private String dong;
+    private int rate_num;
 
-    public shop2() {}
+    public shop2(){}
 
     public String getName() {
         return name;
@@ -17,19 +16,18 @@ public class shop2 {
     }
 
     public String getDong() {
-        return cate_1;
+        return dong;
     }
 
-    public void setDong(String cate_1) {
-        this.cate_1 = cate_1;
+    public void setDong(String dong) {
+        this.dong = dong;
     }
 
-    public Double getStar() {
-        return star;
+    public int getRate_num() {
+        return rate_num;
     }
 
-    public void setRate_num(Double rate_num) {
-        this.star = star;
+    public void setRate_num(int rate_num) {
+        this.rate_num = rate_num;
     }
-
 }
