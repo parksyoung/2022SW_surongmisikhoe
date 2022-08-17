@@ -9,8 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 
 public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolder> {
@@ -35,14 +33,12 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
     @Override
     public void onBindViewHolder(@NonNull adapter01ViewHolder holder, int position) {
 
-    }
 
-    @Override
-    public void onBindViewHolder(@NonNull CustomAdapter.CustomViewHolder holder, int position) {
-        Glide.with(holder.itemView);
-        holder.tv_name.setText(arrayList.get(position).getName());
-        holder.tv_dong.setText(arrayList.get(position).getDong());
-        holder.tv_star.setText(arrayList.get(position).getStar());
+
+        holder.tv_name.getText(arrayList.get(position).getName())
+        holder.tv_location.getText(arrayList.get(position).getLocation());
+        holder.tv_star.getText(arrayList.get(position).getStar());
+
 
 
 
@@ -55,7 +51,7 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
 
     public class adapter01ViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name;
-        TextView tv_dong;
+        TextView tv_location;
         TextView tv_star;
 
 
@@ -63,7 +59,7 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
         public adapter01ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
-            this.tv_dong = itemView.findViewById(R.id.tv_dong);
+            this.tv_location = itemView.findViewById(R.id.tv_location);
             this.tv_star = itemView.findViewById(R.id.tv_star);
 
 

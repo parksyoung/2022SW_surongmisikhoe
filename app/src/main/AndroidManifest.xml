@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SW_02">
         <activity
-            android:name=".chinafood"
-            android:exported="false" />
-        <activity
-            android:name=".westernfood"
-            android:exported="false" />
-        <activity
-            android:name=".koreanfood"
-            android:exported="false" />
-        <activity
-            android:name=".food"
-            android:exported="false" />
-        <activity
             android:name=".starActivity"
             android:exported="false" />
         <activity
