@@ -22,6 +22,9 @@
             android:name=".star"
             android:exported="false" />
         <activity
+            android:name=".review"
+            android:exported="false" />
+        <activity
             android:name=".foodActivity"
             android:exported="true" />
         <activity

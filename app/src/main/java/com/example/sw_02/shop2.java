@@ -1,12 +1,12 @@
 package com.example.sw_02;
 
-public class shop {
+public class shop2 {
 
     private String name;
     private String cate_1;
-    private int rate_num;
+    private Double star;
 
-    public shop() {}
+    public shop2() {}
 
     public String getName() {
         return name;
@@ -16,20 +16,20 @@ public class shop {
         this.name = name;
     }
 
-    public String getCate_1() {
+    public String getDong() {
         return cate_1;
     }
 
-    public void setCate_1(String cate_1) {
+    public void setDong(String cate_1) {
         this.cate_1 = cate_1;
     }
 
-    public int getRate_num() {
-        return rate_num;
+    public Double getStar() {
+        return star;
     }
 
-    public void setRate_num(int rate_num) {
-        this.rate_num = rate_num;
+    public void setRate_num(Double rate_num) {
+        this.star = star;
     }
 
 }
