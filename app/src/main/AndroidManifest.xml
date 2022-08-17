@@ -19,6 +19,9 @@
             android:name=".japenfood"
             android:exported="false" />
         <activity
+            android:name=".star"
+            android:exported="false" />
+        <activity
             android:name=".foodActivity"
             android:exported="true" />
         <activity
