@@ -16,59 +16,48 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class snackmainActivity extends AppCompatActivity {
+public class japenfood extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private Arraylist<Snacksnack> arraylist;
+    private ArrayList<j_rst> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
-    private ArrayList<Snacksnack> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_snackmain);
+        setContentView(R.layout.activity_japenfood);
 
-        recyclerView = findViewById((R.id.recyclerView));
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        arraylist = new Arraylist<>();
+        arrayList = new ArrayList<>();
 
         database = FirebaseDatabase.getInstance();
 
-        databaseReference = database.getReference("Snacksnack");
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener(){
+        databaseReference = database.getReference("j_rst");
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                arraylist.clear();
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                      Snacksnack snacksnack = snapshot.getValue(Snacksnack.class);
-                      arraylist.add(snacksnack);
+                arrayList.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    j_rst j_rst = snapshot.getValue(j_rst.class);
+                    arrayList.add(j_rst);
                 }
                 adapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e("japenfood", String.valueOf(databaseError.toException()));
 
-                Log.e("snackmainActivity", String.valueOf(databaseError.toException()));
             }
         });
 
-        adapter = new CustomAdapter_s(arrayList, this);
+        adapter = new CustomAdapter(arrayList, this);
         recyclerView.setAdapter(adapter);
-        }
-
-
-
-    private class Arraylist<T> {
-        public void clear() {
-        }
-
-        public void add(T snacksnack) {
-        }
     }
 }

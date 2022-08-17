@@ -10,19 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SW_02">
         <activity
+            android:name=".cafeActivity"
+            android:exported="false" />
+        <activity
             android:name=".starActivity"
             android:exported="false" />
         <activity
             android:name=".reviewActivity"
             android:exported="false" />
         <activity
-            android:name=".cafeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".snackActivity"
-            android:exported="false" />
-        <activity
-            android:name=".japenfoodActivity"
+            android:name=".japenfood"
             android:exported="false" />
         <activity
             android:name=".loginActivity2"

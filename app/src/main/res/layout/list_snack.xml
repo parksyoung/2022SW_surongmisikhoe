@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="이름" />
+                android:text="가게 이름" />
 
             <TextView
                 android:id="@+id/tv_dong"

@@ -23,6 +23,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         this.context = context;
     }
 
+    public CustomAdapter(ArrayList<j_rst> arrayList, japenfood context) {
+    }
+
 
     @NonNull
     @Override

@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button reviewButton;
     private Button starButton;
+    private Button foodButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +34,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     });
+
+        foodButton = findViewById(R.id.foodButton);
+        foodButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, food.class);
+                startActivity(intent);
+            }
+        });
 }
 }
