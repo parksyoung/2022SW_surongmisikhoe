@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolder> {
+public class Snackadapter extends RecyclerView.Adapter<Snackadapter.adapter01ViewHolder> {
 
-    private ArrayList<분식> arrayList;
+    private ArrayList<Snacksnack> arrayList;
     private Context context;
 
-    public adapter01(ArrayList<분식> arrayList, Context context) {
+    public Snackadapter(ArrayList<Snacksnack> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -35,8 +35,8 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
 
 
 
-        holder.tv_name.getText(arrayList.get(position).getName())
-        holder.tv_location.getText(arrayList.get(position).getLocation());
+        holder.tv_name.getText(arrayList.get(position).getName());
+        holder.tv_dong.getText(arrayList.get(position).getDong());
         holder.tv_star.getText(arrayList.get(position).getStar());
 
 
@@ -46,12 +46,12 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
 
     @Override
     public int getItemCount() {
-        return 0;
+        return (arrayList != null ? arrayList.size() : 0);
     }
 
     public class adapter01ViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name;
-        TextView tv_location;
+        TextView tv_dong;
         TextView tv_star;
 
 
@@ -59,7 +59,7 @@ public class adapter01 extends RecyclerView.Adapter<adapter01.adapter01ViewHolde
         public adapter01ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
-            this.tv_location = itemView.findViewById(R.id.tv_location);
+            this.tv_dong = itemView.findViewById(R.id.tv_dong);
             this.tv_star = itemView.findViewById(R.id.tv_star);
 
 
