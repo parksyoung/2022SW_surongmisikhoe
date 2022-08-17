@@ -13,13 +13,15 @@ import java.util.ArrayList;
 
 public class CustomAdapter_s extends RecyclerView.Adapter<CustomAdapter_s.CustomViewHolder> {
 
-    private ArrayList<Snacksnack> arrayList;
+    private ArrayList<s_rst> arrayList;
     private Context context;
 
-    public CustomAdapter_s(ArrayList<Snacksnack> arrayList, Context context) {
+    public CustomAdapter_s(ArrayList<s_rst> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
+
+
 
     @NonNull
     @Override

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class food extends AppCompatActivity {
+public class foodActivity extends AppCompatActivity {
 
     private Button koreanfood;
     private Button japanfood;
@@ -25,7 +25,7 @@ public class food extends AppCompatActivity {
         koreanfood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, koreanfood.class);
+                Intent intent = new Intent(foodActivity.this, koreanfood.class);
                 startActivity(intent);
 
             }
@@ -35,7 +35,7 @@ public class food extends AppCompatActivity {
         chinafood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, chinafood.class);
+                Intent intent = new Intent(foodActivity.this, chinafood.class);
                 startActivity(intent);
 
             }
@@ -44,7 +44,7 @@ public class food extends AppCompatActivity {
         westernfood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, westernfood.class);
+                Intent intent = new Intent(foodActivity.this, westernfood.class);
                 startActivity(intent);
 
             }
@@ -53,7 +53,7 @@ public class food extends AppCompatActivity {
         japanfood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, japenfood.class);
+                Intent intent = new Intent(foodActivity.this, japenfood.class);
                 startActivity(intent);
 
             }
@@ -62,7 +62,7 @@ public class food extends AppCompatActivity {
         snack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, snackfood.class);
+                Intent intent = new Intent(foodActivity.this, snackfood.class);
                 startActivity(intent);
 
             }
@@ -71,7 +71,7 @@ public class food extends AppCompatActivity {
         cafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(food.this, cafeActivity.class);
+                Intent intent = new Intent(foodActivity.this, cafeActivity.class);
                 startActivity(intent);
 
             }
