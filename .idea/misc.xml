@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_main.xml" value="0.17274569402228976" />
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_review.xml" value="0.22" />
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/item.xml" value="0.22" />
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/item_list.xml" value="0.22" />
+        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_login2.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
       </map>
     </option>
   </component>
