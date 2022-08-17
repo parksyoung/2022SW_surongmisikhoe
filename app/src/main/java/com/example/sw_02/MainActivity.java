@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
         starButton = findViewById(R.id.starButton);
         starButton.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-            Intent intent = new Intent(MainActivity.this, starActivity.class);
-            startActivity(intent);
-        }
-    });
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, starActivity.class);
+                startActivity(intent);
+            }
+        });
 
         foodButton = findViewById(R.id.foodButton);
         foodButton.setOnClickListener(new View.OnClickListener() {
@@ -43,5 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-}
+
+
+    }
 }
