@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SW_02">
         <activity
+            android:name=".snackmainActivity"
+            android:exported="false" />
+        <activity
             android:name=".starActivity"
             android:exported="false" />
         <activity

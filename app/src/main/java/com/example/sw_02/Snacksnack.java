@@ -1,11 +1,11 @@
 package com.example.sw_02;
 
-public class 분식 {
+public class Snacksnack {
     private String dong;
     private String name;
     private int star;
 
-    public 분식() {
+    public Snacksnack() {
     }
 
     public String getDong() {
@@ -29,6 +29,12 @@ public class 분식 {
     }
 
     public void setStar(int star) {
+        this.star = star;
+    }
+
+    public Snacksnack(String dong, String name, int star) {
+        this.dong = dong;
+        this.name = name;
         this.star = star;
     }
 

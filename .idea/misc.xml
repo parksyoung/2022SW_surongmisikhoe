@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_login2.xml" value="0.19739583333333333" />
-        <entry key="..\:/Users/qkrtj/SW_02/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_cafe.xml" value="0.22826086956521738" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_japenfood.xml" value="0.264" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_login2.xml" value="0.2" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_review.xml" value="0.22826086956521738" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_snack.xml" value="0.22826086956521738" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_snackmain.xml" value="0.1408514492753623" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/activity_star.xml" value="0.22826086956521738" />
+        <entry key="..\:/SW_02/app/src/main/res/layout/list_snack.xml" value="0.264" />
       </map>
     </option>
   </component>
