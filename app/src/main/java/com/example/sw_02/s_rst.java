@@ -1,11 +1,11 @@
 package com.example.sw_02;
 
-public class Snacksnack {
+public class s_rst {
     private String dong;
     private String name;
     private String star;
 
-    public Snacksnack() {
+    public s_rst() {
     }
 
     public String getDong() {
@@ -32,7 +32,7 @@ public class Snacksnack {
         this.star = star;
     }
 
-    public Snacksnack(String dong, String name, String star) {
+    public s_rst(String dong, String name, String star) {
         this.dong = dong;
         this.name = name;
         this.star = star;
