@@ -2,7 +2,7 @@ package com.example.sw_02;
 
 public class c_rst {
     private String name;
-    private String star;
+    private Double star;
     private String dong;
 
     public c_rst(){}
@@ -22,11 +22,11 @@ public class c_rst {
         this.dong = dong;
     }
 
-    public String getStar() {
+    public Double getStar() {
         return star;
     }
 
-    public void setStar(String star) {
+    public void setStar(Double star) {
         this.star = star;
     }
 }
