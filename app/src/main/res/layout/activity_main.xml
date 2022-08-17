@@ -76,7 +76,8 @@ tools:context=".MainActivity">
             android:layout_height="323dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/sungshinlogo" />
+            android:src="@drawable/sungshinlogo"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <RelativeLayout
             android:id="@+id/fragment"
