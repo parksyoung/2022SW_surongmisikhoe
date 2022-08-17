@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sungshindragon"
+    android:orientation="vertical"
+    tools:context=".food">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="283dp"
+        android:layout_height="114dp" />
+
+    <Button
+        android:id="@+id/koreanfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/한식" />
+
+    <Button
+        android:id="@+id/japanfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/일식" />
+
+    <Button
+        android:id="@+id/westernfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/양식" />
+
+    <Button
+        android:id="@+id/chinafood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/중식" />
+
+    <Button
+        android:id="@+id/snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/분식" />
+
+    <Button
+        android:id="@+id/cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/카페" />
+
+</LinearLayout>
