@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
-import java.lang.reflect.Array;
 import java.text.BreakIterator;
 import java.util.ArrayList;
 
@@ -28,9 +27,10 @@ public abstract class CustomAdapter_c extends RecyclerView.Adapter<CustomAdapter
 
     @NonNull
     @Override
-    public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomAdapter.CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ViewGroup list_koreanfood;
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout,list_koreanfood, parent, false);
+        ViewGroup list_chinafood;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout,list_chinafood, parent, false);
         CustomViewHolder holder = new CustomViewHolder(view);
         return holder;
     }
@@ -54,9 +54,9 @@ public abstract class CustomAdapter_c extends RecyclerView.Adapter<CustomAdapter
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         private final View tv_location;
         public BreakIterator tv_name;
-        TextView tv_id;
-        TextView tv_pw;
-        TextView tv_rstName;
+        TextView tv_name
+        TextView tv_location;
+        TextView tv_star;
 
 
         public CustomViewHolder(@NonNull View itemView) {
