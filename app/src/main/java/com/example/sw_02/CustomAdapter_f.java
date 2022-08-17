@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public abstract class CustomAdapter_f extends RecyclerView.Adapter<CustomAdapter_f.CustomViewHolder> {
+public class CustomAdapter_f extends RecyclerView.Adapter<CustomAdapter_f.CustomViewHolder> {
 
     private ArrayList<f_rst> arrayList;
     private Context context;
