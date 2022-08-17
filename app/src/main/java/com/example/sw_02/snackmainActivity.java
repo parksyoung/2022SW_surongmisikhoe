@@ -58,7 +58,7 @@ public class snackmainActivity extends AppCompatActivity {
             }
         });
 
-        adapter = new Snackadapter(arrayList, this);
+        adapter = new CustomAdapter_s(arrayList, this);
         recyclerView.setAdapter(adapter);
         }
 

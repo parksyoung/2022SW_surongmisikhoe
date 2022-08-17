@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Snackadapter extends RecyclerView.Adapter<Snackadapter.adapter01ViewHolder> {
+public class CustomAdapter_s extends RecyclerView.Adapter<CustomAdapter_s.adapter01ViewHolder> {
 
     private ArrayList<Snacksnack> arrayList;
     private Context context;
 
-    public Snackadapter(ArrayList<Snacksnack> arrayList, Context context) {
+    public CustomAdapter_s(ArrayList<Snacksnack> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
