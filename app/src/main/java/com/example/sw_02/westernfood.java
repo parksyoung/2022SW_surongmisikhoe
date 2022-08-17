@@ -57,7 +57,7 @@ public class westernfood extends AppCompatActivity {
             }
         });
 
-        adapter = new CustomAdapter(arrayList, this);
+        adapter = new CustomAdapter_w(arrayList, this);
         recyclerView.setAdapter(adapter);
     }
 }
