@@ -44,7 +44,7 @@ public class westernfood extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 arrayList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    k_rst k_rst = snapshot.getValue(w_rst.class);
+                    w_rst w_rst = snapshot.getValue(w_rst.class);
                     arrayList.add(w_rst);
                 }
                 adapter.notifyDataSetChanged();

@@ -2,7 +2,7 @@ package com.example.sw_02;
 
 public class k_rst {
     private String name;
-    private String location;
+    private String dong;
     private String star;
 
     public k_rst(){}
@@ -16,12 +16,12 @@ public class k_rst {
         this.name = name;
     }
 
-    public String getLocation() {
-        return location;
+    public String getDong() {
+        return dong;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setDong(String dong) {
+        this.dong = dong;
     }
 
     public String getStar() {

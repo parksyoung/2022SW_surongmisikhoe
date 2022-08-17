@@ -29,7 +29,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     @NonNull
     @Override
     public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ViewGroup list_koreanfood;
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout,list_koreanfood, parent, false);
         CustomViewHolder holder = new CustomViewHolder(view);
         return holder;
@@ -39,7 +38,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         Glide.with(holder.itemView);
         holder.tv_name.setText(arrayList.get(position).getName());
-        holder.tv_location.setText(arrayList.get(position).getLocation());
+        holder.tv_dong.setText(arrayList.get(position).getDong());
         holder.tv_star.setText(arrayList.get(position).getStar());
 
 
@@ -52,17 +51,15 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
-        private final View tv_location;
-        public BreakIterator tv_name;
         TextView tv_name;
-        TextView tv_location;
+        TextView tv_dong;
         TextView tv_star;
 
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
-            this.tv_location = itemView.findViewById(R.id.tv_location);
+            this.tv_dong = itemView.findViewById(R.id.tv_dong);
             this.tv_star = itemView.findViewById(R.id.tv_star);
         }
     }

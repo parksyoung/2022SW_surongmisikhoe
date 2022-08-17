@@ -44,7 +44,7 @@ public class chinafood extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 arrayList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    c_rst k_rst = snapshot.getValue(c_rst.class);
+                    c_rst c_rst = snapshot.getValue(c_rst.class);
                     arrayList.add(c_rst);
                 }
                 adapter.notifyDataSetChanged();
