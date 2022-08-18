@@ -10,12 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SW_02">
         <activity
-            android:name=".starActivity"
-            android:exported="false" />
-        <activity
-            android:name=".reviewActivity"
-            android:exported="false" />
-        <activity
             android:name=".japenfood"
             android:exported="false" />
         <activity
